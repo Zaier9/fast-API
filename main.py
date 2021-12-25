@@ -48,8 +48,8 @@ class Person(BaseModel):
         le=115,
         example=25
     )
-    hair_color: Optional[HairColor] = Field(default=None)
-    is_married: Optional[bool] = Field(default=None)
+    hair_color: Optional[HairColor] = Field(default=None, example=HairColor.black)
+    is_married: Optional[bool] = Field(default=None, example=True)
 
     # class Config:
     #     schema_extra = {
